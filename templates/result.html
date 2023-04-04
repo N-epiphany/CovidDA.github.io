@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 5 Districts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+{% extends 'index.html' %}
+
+{% block content %}
+
+    <div class="result p-5 " style="color: rgb(174, 97, 221); display: flex; justify-content: center; align-items: center;" >
+       
+        {{ result.to_html(index=True)|safe }}
+        
+    </div>
+    
+{% endblock %}    
+</body>
+</html>
